@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$BITBIRD - Free the Birds</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .pixel-font {
+            font-family: 'Press Start 2P', cursive;
+        }
+        .card-bg {
+            background-color: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(71, 85, 105, 0.5);
+            border-radius: 8px;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="p-6 flex items-center justify-between sticky top-0 bg-gray-900 z-20">
+        <div class="flex items-center space-x-3">
+            <i class="fas fa-feather-alt text-orange-400 text-3xl"></i>
+            <h1 class="text-3xl font-bold text-white pixel-font">BITBIRD CTO</h1>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-6">
+            <a href="#hero-section" class="text-gray-300 hover:text-orange-400 transition duration-300">Home</a>
+            <a href="#bitbird-showcase" class="text-gray-300 hover:text-orange-400 transition duration-300">BitBird</a>
+            <a href="#mission-roadmap" class="text-gray-300 hover:text-orange-400 transition duration-300">Mission</a>
+            <a href="#memes-section" class="text-gray-300 hover:text-orange-400 transition duration-300">Memes</a>
+            <a href="#links-section" class="text-gray-300 hover:text-orange-400 transition duration-300">Links</a>
+        </nav>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-gray-800 md:hidden py-4 shadow-lg card-bg z-10">
+            <a href="#hero-section" class="block px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-orange-400 transition duration-300">Home</a>
+            <a href="#bitbird-showcase" class="block px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-orange-400 transition duration-300">BitBird</a>
+            <a href="#mission-roadmap" class="block px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-orange-400 transition duration-300">Mission</a>
+            <a href="#memes-section" class="block px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-orange-400 transition duration-300">Memes</a>
+            <a href="#links-section" class="block px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-orange-400 transition duration-300">Links</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main id="hero-section" class="flex-grow container mx-auto px-6 py-16 flex flex-col items-center justify-center text-center">
+        <h2 class="text-5xl md:text-6xl font-extrabold text-white leading-tight mb-6 pixel-font">
+            <span class="text-orange-400">Free the Birds.</span>
+        </h2>
+        <p class="text-xl md:text-2xl text-gray-300 max-w-2xl mb-10">
+            The NFTBirds need help migrating off the OpenSea storefront. Help the Flock break free! 
+        </p>
+        <button id="fundMigrationBtn" class="bg-orange-500 hover:bg-orange-600 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-orange-400 focus:ring-opacity-50 pixel-font text-sm">
+            Join the Migration <i class="fas fa-arrow-right ml-2"></i>
+        </button>
+    </main>
+
+    <!-- Collection Showcase Section -->
+    <section id="bitbird-showcase" class="container mx-auto px-6 pt-4 pb-12">
+        <h3 class="text-4xl font-bold text-center text-white mb-8 pixel-font">$BITBIRD</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="card-bg p-4"><img src="https://i.seadn.io/gcs/files/c34f4cfcc36b916aea9b881d49f2e763.png?w=4000&auto=format" alt="" class="w-full h-auto rounded-md"></div>
+            <div class="card-bg p-4"><img src="https://i.seadn.io/gcs/files/1754ba8b064d25e009fda09f46e6c089.png?w=4000&auto=format" alt="" class="w-full h-auto rounded-md"></div>
+            <div class="card-bg p-4"><img src="https://i.seadn.io/gcs/files/36ef2f8e4b6d7ff504fdedb24ad30950.png?w=4000&auto=format" alt="" class="w-full h-auto rounded-md"></div>
+            <div class="card-bg p-4"><img src="https://i.seadn.io/gcs/files/e39733c9ea3b6a715a0e5ae6fac8d74d.png?w=4000&auto=format" alt="" class="w-full h-auto rounded-md"></div>
+            <div class="card-bg p-4"><img src="https://i.seadn.io/gcs/files/b36a139508f995cc7353da1ee8b00956.png?w=4000&auto=format" alt="" class="w-full h-auto rounded-md"></div>
+            <div class="card-bg p-4"><img src="https://i.seadn.io/gcs/files/71fb7c52cd3409ebf338b2e82ae3e468.png?w=4000&auto=format" alt="" class="w-full h-auto rounded-md"></div>
+            <div class="card-bg p-4"><img src="https://i.seadn.io/gcs/files/7555eedf228c578a614daa0b29220a96.png?w=4000&auto=format" alt="" class="w-full h-auto rounded-md"></div>
+            <div class="card-bg p-4"><img src="https://i.seadn.io/gcs/files/2b7273b1797d6852dac73fbd7362ba92.png?w=4000&auto=format" alt="" class="w-full h-auto rounded-md"></div>
+        </div>
+    </section>
+
+    <!-- Mission / Roadmap Section -->
+    <section id="mission-roadmap" class="container mx-auto px-6 py-12">
+        <h3 class="text-4xl font-bold text-center text-white mb-12 pixel-font">$BITBIRD Roadmap</h3>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="card-bg p-6 flex flex-col items-start rounded-md">
+                <h4 class="text-2xl font-bold text-orange-400 mb-4 pixel-font">Phase 1 – Bird Calls</h4>
+                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                    <li>$BITBIRD LAUNCH</li>
+                </ul>
+            </div>
+            <div class="card-bg p-6 flex flex-col items-start rounded-md">
+                <h4 class="text-2xl font-bold text-orange-400 mb-4 pixel-font">Phase 2 – Migration</h4>
+                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                    <li>Deploy new NFT contract using $BITBIRD fees</li>
+                    <li>Remint metadata + images</li>
+                    <li>Airdrop Birds to holders</li>
+                </ul>
+            </div>
+            <div class="card-bg p-6 flex flex-col items-start rounded-md">
+                <h4 class="text-2xl font-bold text-orange-400 mb-4 pixel-font">Phase 3 – The Flock</h4>
+                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                    <li>Bird lore, memes, community</li>
+                </ul>
+            </div>
+            <div class="card-bg p-6 flex flex-col items-start rounded-md">
+                <h4 class="text-2xl font-bold text-orange-400 mb-4 pixel-font">Phase 4 – The Sky</h4>
+                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                    <li>No Limits</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meme Section -->
+    <section id="memes-section" class="container mx-auto px-6 py-12">
+        <h3 class="text-4xl font-bold text-center text-white mb-12 pixel-font">BitBirds Memes</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="card-bg p-4"><img src="https://cdn-longterm.mee6.xyz/plugins/embeds/images/819705230605156402/287219cd0364a614d61b50dcdd7df5706f14fbc05c42950a7d8fab3f0313b148.gif" class="w-full h-auto rounded-md"></div>
+            <div class="card-bg p-4"><img src="https://cdn-longterm.mee6.xyz/plugins/embeds/images/819705230605156402/57554feff976f50303f05d85fc10309e0016d575bff3d9bf282109911016d8a9.gif" class="w-full h-auto rounded-md"></div>
+            <div class="card-bg p-4"><img src="https://cdn-longterm.mee6.xyz/plugins/embeds/images/819705230605156402/9dcee7aac2add4cf58774dfaf439f51f83e51d8143cd23df53d29a632596f93b.gif" class="w-full h-auto rounded-md"></div>
+            <div class="card-bg p-4"><img src="https://cdn-longterm.mee6.xyz/plugins/embeds/images/819705230605156402/2517e3134fdd19e57cc099c6144b1f1aed4942a77fae8c48dc10a1dea31b54a9.gif" class="w-full h-auto rounded-md"></div>
+        </div>
+    </section>
+
+    <!-- Links Section -->
+    <section id="links-section" class="container mx-auto px-6 py-12">
+        <h3 class="text-4xl font-bold text-center text-white mb-12 pixel-font">Useful Links</h3>
+        <div class="card-bg p-8 max-w-2xl mx-auto">
+            <ul class="space-y-4 text-lg break-all">
+                <li><a href="https://nftbirds.io/" target="_blank" class="text-gray-300 hover:text-orange-400 transition duration-300 flex items-center"><i class="fas fa-globe text-orange-400 mr-3 flex-shrink-0"></i> https://nftbirds.io/</a></li>
+                <li><a href="https://x.com/NFTBirds" target="_blank" class="text-gray-300 hover:text-orange-400 transition duration-300 flex items-center"><i class="fab fa-twitter text-orange-400 mr-3 flex-shrink-0"></i> https://x.com/NFTBirds</a></li>
+                <li><a href="https://opensea.io/collection/bit-birds" target="_blank" class="text-gray-300 hover:text-orange-400 transition duration-300 flex items-center"><i class="fab fa-ethereum text-orange-400 mr-3 flex-shrink-0"></i> https://opensea.io/collection/bit-birds</a></li>
+                <li><a href="https://github.com/nft-fun/generate-bitbirds" target="_blank" class="text-gray-300 hover:text-orange-400 transition duration-300 flex items-center"><i class="fab fa-github text-orange-400 mr-3 flex-shrink-0"></i> https://github.com/nft-fun/generate-bitbirds</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-6 text-center text-gray-400 mt-12">
+        <p>&copy; 2025 $BITBIRDS. All rights reserved. Free the Birds.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const fundMigrationBtn = document.getElementById('fundMigrationBtn');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+
+            fundMigrationBtn.addEventListener('click', () => {
+                alert('Thank you for your interest in joining the migration! (This is a placeholder action)');
+            });
+
+            // Toggle mobile menu
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu on link click
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Close mobile menu if clicked outside
+            document.addEventListener('click', (event) => {
+                if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target) && !mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
