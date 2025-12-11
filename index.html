@@ -29,7 +29,6 @@
     <!-- Header -->
     <header class="p-6 flex items-center justify-between sticky top-0 bg-gray-900 z-20">
         <div class="flex items-center space-x-3">
-            <i class="fas fa-feather-alt text-orange-400 text-3xl"></i>
             <h1 class="text-3xl font-bold text-white pixel-font">BITBIRD CTO</h1>
         </div>
 
@@ -65,11 +64,11 @@
             <span class="text-orange-400">Free the Birds.</span>
         </h2>
         <p class="text-xl md:text-2xl text-gray-300 max-w-2xl mb-10">
-            The NFTBirds need help migrating off the OpenSea storefront. Help the Flock break free! 
+            Grow the Flock
         </p>
-        <button id="fundMigrationBtn" class="bg-orange-500 hover:bg-orange-600 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-orange-400 focus:ring-opacity-50 pixel-font text-sm">
-            Join the Migration <i class="fas fa-arrow-right ml-2"></i>
-        </button>
+<button id="fundMigrationBtn" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-orange-400 focus:ring-opacity-50 pixel-font text-sm">
+    0x1234567890abcdef1234567890ABCDEF12345678
+</button>
     </main>
 
     <!-- Collection Showcase Section -->
@@ -94,27 +93,25 @@
             <div class="card-bg p-6 flex flex-col items-start rounded-md">
                 <h4 class="text-2xl font-bold text-orange-400 mb-4 pixel-font">Phase 1 – Bird Calls</h4>
                 <ul class="list-disc list-inside text-gray-300 space-y-2">
-                    <li>$BITBIRD LAUNCH</li>
+                    <li>Grow the Flock</li>
                 </ul>
             </div>
             <div class="card-bg p-6 flex flex-col items-start rounded-md">
-                <h4 class="text-2xl font-bold text-orange-400 mb-4 pixel-font">Phase 2 – Migration</h4>
+                <h4 class="text-2xl font-bold text-orange-400 mb-4 pixel-font">Phase 2 – Taking Flight</h4>
                 <ul class="list-disc list-inside text-gray-300 space-y-2">
-                    <li>Deploy new NFT contract using $BITBIRD fees</li>
-                    <li>Remint metadata + images</li>
-                    <li>Airdrop Birds to holders</li>
+                    <li>Launch $BITBIRD</li>
                 </ul>
             </div>
             <div class="card-bg p-6 flex flex-col items-start rounded-md">
                 <h4 class="text-2xl font-bold text-orange-400 mb-4 pixel-font">Phase 3 – The Flock</h4>
                 <ul class="list-disc list-inside text-gray-300 space-y-2">
-                    <li>Bird lore, memes, community</li>
+                    <li>Bird Lore, Memes, Community</li>
                 </ul>
             </div>
             <div class="card-bg p-6 flex flex-col items-start rounded-md">
                 <h4 class="text-2xl font-bold text-orange-400 mb-4 pixel-font">Phase 4 – The Sky</h4>
                 <ul class="list-disc list-inside text-gray-300 space-y-2">
-                    <li>No Limits</li>
+                    <li>Lifting the Flock into Unexplored Heights</li>
                 </ul>
             </div>
         </div>
@@ -144,41 +141,47 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="p-6 text-center text-gray-400 mt-12">
-        <p>&copy; 2025 $BITBIRDS. All rights reserved. Free the Birds.</p>
-    </footer>
+<!-- Dummy Contract Address Display -->
+<div class="text-center mt-6">
+    <p class="text-gray-300">Dummy Contract Address:</p>
+    <p class="text-gray-100 font-mono text-lg">0x1234567890abcdef1234567890ABCDEF12345678</p>
+</div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const fundMigrationBtn = document.getElementById('fundMigrationBtn');
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+<!-- Footer -->
+<footer class="p-6 text-center text-gray-400 mt-12">
+    <p>&copy; 2025 $BITBIRDS. All rights reserved. Free the Birds.</p>
+</footer>
 
-            fundMigrationBtn.addEventListener('click', () => {
-                alert('Thank you for your interest in joining the migration! (This is a placeholder action)');
-            });
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const fundMigrationBtn = document.getElementById('fundMigrationBtn');
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
 
-            // Toggle mobile menu
-            mobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
+        fundMigrationBtn.addEventListener('click', () => {
+            alert('Thank you for your interest in joining the flock!');
+        });
 
-            // Close mobile menu on link click
-            mobileMenuLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                });
-            });
+        // Toggle mobile menu
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
 
-            // Close mobile menu if clicked outside
-            document.addEventListener('click', (event) => {
-                if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target) && !mobileMenu.classList.contains('hidden')) {
-                    mobileMenu.classList.add('hidden');
-                }
+        // Close mobile menu on link click
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
             });
         });
-    </script>
+
+        // Close mobile menu if clicked outside
+        document.addEventListener('click', (event) => {
+            if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target) && !mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    });
+</script>
 </body>
 </html>
